@@ -3,7 +3,7 @@ import { Pool } from 'pg'
 import { PrismaPg } from '@prisma/adapter-pg'
 import { PrismaClient } from '../src/generated/prisma/client'
 
-const DEMO_EMAIL = 'demo@DeoKit.io'
+const DEMO_EMAIL = 'demo@NeoKit.io'
 
 async function main() {
   const connectionString = process.env.DATABASE_URL

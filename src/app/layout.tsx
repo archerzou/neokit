@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DeoKit - Developer Knowledge Hub",
+  title: "NeoKit - Developer Knowledge Hub",
   description: "A unified hub for developer knowledge & resources",
 };
 

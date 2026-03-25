@@ -2,8 +2,8 @@ import { Suspense } from 'react'
 import { VerifyEmailContent } from '@/components/auth/verify-email-content'
 
 export const metadata = {
-  title: 'Verify Email - DeoKit',
-  description: 'Verify your DeoKit email address',
+  title: 'Verify Email - NeoKit',
+  description: 'Verify your NeoKit email address',
 }
 
 export default function VerifyEmailPage() {

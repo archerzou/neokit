@@ -32,7 +32,7 @@ async function main() {
     // Fetch demo user
     console.log('\n👤 Demo User:')
     const demoUser = await prisma.user.findUnique({
-      where: { email: 'demo@DeoKit.io' },
+      where: { email: 'demo@NeoKit.io' },
       include: {
         collections: {
           include: {

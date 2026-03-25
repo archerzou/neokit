@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-[#e4e4ef]">
           <FolderOpen className="size-7" />
-          DeoKit
+          NeoKit
         </Link>
 
         <div className="hidden md:flex gap-8">

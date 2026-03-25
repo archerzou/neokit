@@ -72,7 +72,7 @@ export function RegisterForm() {
       <CardHeader className="text-center">
         <CardTitle className="text-2xl">Create an account</CardTitle>
         <CardDescription>
-          Enter your details to create your DeoKit account
+          Enter your details to create your NeoKit account
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">

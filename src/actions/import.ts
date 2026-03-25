@@ -73,7 +73,7 @@ export async function previewImport(
 
   const parsed = importDataSchema.safeParse(raw);
   if (!parsed.success) {
-    return { success: false, error: 'Invalid export format. Please use a file exported from DeoKit.' };
+    return { success: false, error: 'Invalid export format. Please use a file exported from NeoKit.' };
   }
 
   const data = parsed.data;
@@ -99,7 +99,7 @@ export async function previewImport(
 }
 
 /**
- * Import data from a DeoKit export JSON
+ * Import data from a NeoKit export JSON
  */
 export async function importData(
   jsonString: string,
@@ -117,7 +117,7 @@ export async function importData(
 
   const parsed = importDataSchema.safeParse(raw);
   if (!parsed.success) {
-    return { success: false, error: 'Invalid export format. Please use a file exported from DeoKit.' };
+    return { success: false, error: 'Invalid export format. Please use a file exported from NeoKit.' };
   }
 
   const data = parsed.data;

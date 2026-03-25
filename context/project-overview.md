@@ -1,4 +1,4 @@
-# DeoKit - Project Overview
+# NeoKit - Project Overview
 
 > A unified hub for developer knowledge & resources
 
@@ -32,7 +32,7 @@ Developers keep their essentials scattered across multiple tools and locations:
 
 **The Result:** Context switching, lost knowledge, and inconsistent workflows.
 
-**The Solution:** DeoKit provides ONE fast, searchable, AI-enhanced hub for all developer knowledge & resources.
+**The Solution:** NeoKit provides ONE fast, searchable, AI-enhanced hub for all developer knowledge & resources.
 
 ---
 
@@ -51,7 +51,7 @@ Developers keep their essentials scattered across multiple tools and locations:
 
 ### A. Items & Item Types
 
-Items are the core unit of DeoKit. Each item has a type that determines its behavior and appearance.
+Items are the core unit of NeoKit. Each item has a type that determines its behavior and appearance.
 
 #### System Types (Immutable)
 
@@ -593,7 +593,7 @@ Refer to the screenshots below as a base for the dashboard UI. It does not have 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  DeoKit                                    🔍  ⚙️  👤     │
+│  NeoKit                                    🔍  ⚙️  👤     │
 ├──────────────┬──────────────────────────────────────────────┤
 │              │                                              │
 │  TYPES       │  Collections                                 │
@@ -685,7 +685,7 @@ export const ITEM_TYPE_COLORS = {
 ## 📁 Suggested Project Structure
 
 ```
-DeoKit/
+NeoKit/
 ├── prisma/
 │   ├── schema.prisma
 │   ├── migrations/

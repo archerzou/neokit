@@ -39,7 +39,7 @@ export default function TopBar({ onMenuClick, isPro }: TopBarProps) {
       {/* Logo */}
       <Link href="/dashboard" className="flex items-center gap-2 shrink-0">
         <FolderOpen className="h-6 w-6 text-primary" />
-        <span className="hidden sm:inline text-lg font-semibold">DeoKit</span>
+        <span className="hidden sm:inline text-lg font-semibold">NeoKit</span>
       </Link>
 
       {/* Search trigger - full bar on sm+, icon-only on mobile */}

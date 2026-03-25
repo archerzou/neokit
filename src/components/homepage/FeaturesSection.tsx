@@ -61,7 +61,7 @@ export default function FeaturesSection() {
         </ScrollFadeIn>
         <ScrollFadeIn>
           <p className="text-base text-[#8888a4] max-w-[520px] mx-auto mb-16 leading-relaxed">
-            Stop context-switching between tools. DeoKit keeps all your developer resources
+            Stop context-switching between tools. NeoKit keeps all your developer resources
             organized and searchable.
           </p>
         </ScrollFadeIn>

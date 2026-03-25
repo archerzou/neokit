@@ -132,7 +132,7 @@ export default function ImportDialog({ open, onOpenChange }: ImportDialogProps) 
         <DialogHeader>
           <DialogTitle>Import Data</DialogTitle>
           <DialogDescription>
-            Import items and collections from a DeoKit export file.
+            Import items and collections from a NeoKit export file.
           </DialogDescription>
         </DialogHeader>
 

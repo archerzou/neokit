@@ -6,7 +6,7 @@
 
 ## Research
 
-Analyze the codebase to create a comprehensive Stripe subscription integration plan for DeoKit Pro ($8/mo monthly, $72/year annual).
+Analyze the codebase to create a comprehensive Stripe subscription integration plan for NeoKit Pro ($8/mo monthly, $72/year annual).
 
 ## Include
 

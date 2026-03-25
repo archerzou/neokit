@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="max-md:col-span-2 max-sm:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-[#e4e4ef] mb-3">
               <FolderOpen className="size-6" />
-              DeoKit
+              NeoKit
             </Link>
             <p className="text-sm text-[#8888a4] max-w-[280px] leading-relaxed">
               Your developer knowledge hub. One place for snippets, prompts, commands, and more.
@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div className="border-t border-[#1e1e2e] pt-6 text-center">
           <p className="text-sm text-[#55556a]">
-            &copy; {new Date().getFullYear()} DeoKit. All rights reserved.
+            &copy; {new Date().getFullYear()} NeoKit. All rights reserved.
           </p>
         </div>
       </div>

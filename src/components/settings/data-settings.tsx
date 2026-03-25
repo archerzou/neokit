@@ -35,7 +35,7 @@ export default function DataSettings({ isPro }: DataSettingsProps) {
       const blob = await res.blob();
       const disposition = res.headers.get('Content-Disposition') || '';
       const filenameMatch = disposition.match(/filename="(.+?)"/);
-      const filename = filenameMatch?.[1] || `DeoKit-export.${format}`;
+      const filename = filenameMatch?.[1] || `NeoKit-export.${format}`;
 
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');

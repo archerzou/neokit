@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import { ResetPasswordForm } from "@/components/auth/reset-password-form";
 
 export const metadata = {
-  title: "Reset Password - DeoKit",
-  description: "Set a new password for your DeoKit account",
+  title: "Reset Password - NeoKit",
+  description: "Set a new password for your NeoKit account",
 };
 
 export default function ResetPasswordPage() {

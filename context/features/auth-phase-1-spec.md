@@ -33,7 +33,7 @@ Use Context7 to verify the newest config and conventions.
 ## Environment Variables
 
 ```
-AUTH_SECRET=
+BETTER_AUTH_SECRET=
 AUTH_GITHUB_ID=
 AUTH_GITHUB_SECRET=
 ```

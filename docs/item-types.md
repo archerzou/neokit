@@ -1,12 +1,12 @@
 # Item Types Documentation
 
-> Generated documentation for DeoKit's 7 item types
+> Generated documentation for NeoKit's 7 item types
 
 ---
 
 ## Overview
 
-DeoKit uses 7 system-defined item types to categorize developer resources. Each type has a specific purpose, icon, color, and content storage method. All system types are immutable (`isSystem: true`) and shared across all users.
+NeoKit uses 7 system-defined item types to categorize developer resources. Each type has a specific purpose, icon, color, and content storage method. All system types are immutable (`isSystem: true`) and shared across all users.
 
 ---
 

@@ -1,8 +1,8 @@
 import { RegisterForm } from "@/components/auth/register-form";
 
 export const metadata = {
-  title: "Register - DeoKit",
-  description: "Create your DeoKit account",
+  title: "Register - NeoKit",
+  description: "Create your NeoKit account",
 };
 
 export default function RegisterPage() {

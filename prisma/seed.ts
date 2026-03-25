@@ -66,7 +66,7 @@ async function main() {
   const hashedPassword = await bcrypt.hash('12345678', 12)
 
   const demoUser = await prisma.user.upsert({
-    where: { email: 'demo@DeoKit.io' },
+    where: { email: 'demo@NeoKit.io' },
     update: {
       name: 'Demo User',
       password: hashedPassword,
@@ -76,7 +76,7 @@ async function main() {
       emailVerified: new Date(),
     },
     create: {
-      email: 'demo@DeoKit.io',
+      email: 'demo@NeoKit.io',
       name: 'Demo User',
       password: hashedPassword,
       isPro: false,
@@ -590,7 +590,7 @@ volumes:
   console.log('\n✅ Seed completed successfully!')
   console.log('\n📊 Summary:')
   console.log(`   • 7 system item types`)
-  console.log(`   • 1 demo user (demo@DeoKit.io / 12345678)`)
+  console.log(`   • 1 demo user (demo@NeoKit.io / 12345678)`)
   console.log(`   • 3 collections`)
   console.log(`   • 17 items total`)
 }

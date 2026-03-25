@@ -115,7 +115,7 @@ export function SignInForm() {
   return (
     <Card className="w-full max-w-md">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl">Sign in to DeoKit</CardTitle>
+        <CardTitle className="text-2xl">Sign in to NeoKit</CardTitle>
         <CardDescription>
           Enter your credentials or use GitHub to sign in
         </CardDescription>

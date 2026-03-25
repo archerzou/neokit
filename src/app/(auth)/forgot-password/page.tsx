@@ -1,8 +1,8 @@
 import { ForgotPasswordForm } from "@/components/auth/forgot-password-form";
 
 export const metadata = {
-  title: "Forgot Password - DeoKit",
-  description: "Reset your DeoKit password",
+  title: "Forgot Password - NeoKit",
+  description: "Reset your NeoKit password",
 };
 
 export default function ForgotPasswordPage() {

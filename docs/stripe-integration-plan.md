@@ -1,6 +1,6 @@
 # Stripe Integration Plan
 
-> Comprehensive plan for adding Stripe subscription billing to DeoKit Pro ($8/mo or $72/yr).
+> Comprehensive plan for adding Stripe subscription billing to NeoKit Pro ($8/mo or $72/yr).
 
 ---
 
@@ -68,7 +68,7 @@ Before writing code, configure these in the [Stripe Dashboard](https://dashboard
 
 ### 1. Create Product
 
-- **Name:** DeoKit Pro
+- **Name:** NeoKit Pro
 - **Description:** Unlimited items, collections, file uploads, and AI features
 
 ### 2. Create Two Prices
@@ -852,7 +852,7 @@ import { useSearchParams } from 'next/navigation';
 const searchParams = useSearchParams();
 useEffect(() => {
   if (searchParams.get('upgraded') === 'true') {
-    toast.success('Welcome to DeoKit Pro!');
+    toast.success('Welcome to NeoKit Pro!');
     // Clean up URL
     window.history.replaceState({}, '', '/settings');
   }
@@ -920,7 +920,7 @@ stripe listen --forward-to localhost:3000/api/webhooks/stripe
   - [ ] Click "Upgrade $72/yr" from settings - redirects to Stripe Checkout
   - [ ] Complete payment with test card `4242 4242 4242 4242`
   - [ ] Redirected back to `/settings?upgraded=true`
-  - [ ] "Welcome to DeoKit Pro!" toast appears
+  - [ ] "Welcome to NeoKit Pro!" toast appears
   - [ ] Plan shows as "Pro" on settings page
   - [ ] `session.user.isPro` is `true` after page reload
 

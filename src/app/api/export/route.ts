@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
     return new NextResponse(json, {
       headers: {
         'Content-Type': 'application/json',
-        'Content-Disposition': `attachment; filename="DeoKit-export-${dateStr}.json"`,
+        'Content-Disposition': `attachment; filename="NeoKit-export-${dateStr}.json"`,
       },
     });
   }
@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
   });
 
   // Add JSON manifest
-  archive.append(JSON.stringify(data, null, 2), { name: 'DeoKit-export.json' });
+  archive.append(JSON.stringify(data, null, 2), { name: 'NeoKit-export.json' });
 
   // Fetch and add files from R2 for file/image items
   const fileItems = data.items.filter((item) =>
@@ -91,7 +91,7 @@ export async function GET(request: NextRequest) {
   return new Response(zipBytes.buffer as ArrayBuffer, {
     headers: {
       'Content-Type': 'application/zip',
-      'Content-Disposition': `attachment; filename="DeoKit-export-${dateStr}.zip"`,
+      'Content-Disposition': `attachment; filename="NeoKit-export-${dateStr}.zip"`,
     },
   });
 }

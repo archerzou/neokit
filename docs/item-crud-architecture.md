@@ -1,6 +1,6 @@
 # Item CRUD Architecture
 
-> Unified CRUD system design for all 7 item types in DeoKit
+> Unified CRUD system design for all 7 item types in NeoKit
 
 ---
 

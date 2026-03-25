@@ -10,7 +10,7 @@ function validateLimit(limit: number, defaultLimit: number): number {
   return Math.min(Math.max(1, limit), MAX_QUERY_LIMIT) || defaultLimit;
 }
 
-const DEMO_USER_EMAIL = 'demo@DeoKit.io';
+const DEMO_USER_EMAIL = 'demo@NeoKit.io';
 
 /**
  * Get the demo user (temporary until auth is implemented)

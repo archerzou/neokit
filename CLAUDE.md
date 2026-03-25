@@ -1,4 +1,4 @@
-# DeoKit
+# NeoKit
 
 A developer knowledge hub for snippets, commands, prompts, notes, files, images, links and custom types.
 
@@ -24,7 +24,7 @@ Read the following to get the full context of the project:
 
 When using the Neon MCP tools:
 
-- **Project:** `DeoKit` (ID: `rough-wave-01978094`)
+- **Project:** `NeoKit` (ID: `rough-wave-01978094`)
 - **Default Branch:** `development` (ID: `br-snowy-wave-ahmwgmj3`)
 - **Database:** `neondb`
 

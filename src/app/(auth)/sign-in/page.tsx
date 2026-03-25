@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import { SignInForm } from "@/components/auth/sign-in-form";
 
 export const metadata = {
-  title: "Sign In - DeoKit",
-  description: "Sign in to your DeoKit account",
+  title: "Sign In - NeoKit",
+  description: "Sign in to your NeoKit account",
 };
 
 export default function SignInPage() {

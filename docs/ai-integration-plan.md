@@ -1,6 +1,6 @@
 # AI Integration Plan
 
-> Research findings for integrating OpenAI GPT-5 Nano into DeoKit
+> Research findings for integrating OpenAI GPT-5 Nano into NeoKit
 
 ---
 
@@ -33,7 +33,7 @@
 | **Supports** | Structured outputs, function calling, streaming |
 | **Context Window** | Suitable for code snippets and short content |
 
-GPT-5 Nano is ideal for DeoKit's AI features because:
+GPT-5 Nano is ideal for NeoKit's AI features because:
 - **Auto-tagging** = classification task (nano's sweet spot)
 - **Summaries** = summarization task (nano's sweet spot)
 - **Code explanation** = moderate reasoning (nano handles well for short snippets)
@@ -288,7 +288,7 @@ export async function optimizePrompt(input: {
 
 ### Server Action Pattern (Matches Existing Codebase)
 
-All AI server actions should follow the established DeoKit pattern:
+All AI server actions should follow the established NeoKit pattern:
 
 ```typescript
 'use server';

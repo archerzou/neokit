@@ -21,7 +21,7 @@ export default function BillingSettings({ isPro, itemCount, collectionCount }: B
 
   useEffect(() => {
     if (searchParams.get('upgraded') === 'true') {
-      toast.success('Welcome to DeoKit Pro!');
+      toast.success('Welcome to NeoKit Pro!');
       window.history.replaceState({}, '', '/settings');
     }
   }, [searchParams]);

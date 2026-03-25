@@ -9,7 +9,7 @@ Allow users to export their data as JSON (free) or ZIP with files (Pro), and imp
 ### JSON Export (Free)
 
 - "Export JSON" button triggers a server action that queries all user items, collections, tags, and collection assignments
-- Generates `DeoKit-export-{date}.json` downloaded via `/api/export` route
+- Generates `NeoKit-export-{date}.json` downloaded via `/api/export` route
 - File/image items include metadata (fileName, fileSize) but NOT actual files
 - Export format:
 
@@ -46,7 +46,7 @@ Allow users to export their data as JSON (free) or ZIP with files (Pro), and imp
 
 - "Export ZIP" button with PRO badge
 - Same JSON manifest as above + actual files/images from R2 in a `/files` directory
-- Downloads `DeoKit-export-{date}.zip`
+- Downloads `NeoKit-export-{date}.zip`
 
 ## Import
 

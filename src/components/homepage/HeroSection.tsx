@@ -20,7 +20,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-lg text-[#8888a4] max-w-[560px] mx-auto mb-8 leading-relaxed max-sm:text-base">
           Your snippets, prompts, commands, and notes are scattered across Notion, GitHub, Slack,
-          and a dozen browser tabs. DeoKit brings them all into one fast, searchable hub.
+          and a dozen browser tabs. NeoKit brings them all into one fast, searchable hub.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Button asChild size="lg" className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 text-white border-0 px-8 py-3 text-base hover:opacity-90 hover:-translate-y-0.5 transition-all">
@@ -50,7 +50,7 @@ export default function HeroSection() {
         {/* Dashboard side */}
         <div className="flex-1 max-md:w-full">
           <span className="block text-center text-xs text-[#55556a] mb-3 uppercase tracking-widest font-semibold">
-            ...with DeoKit
+            ...with NeoKit
           </span>
           <DashboardPreview />
         </div>

@@ -1,7 +1,7 @@
 import { resend } from './resend'
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
-const FROM_EMAIL = 'DeoKit <noreply@DeoKit.io>'
+const FROM_EMAIL = 'NeoKit <noreply@NeoKit.io>'
 
 export async function sendVerificationEmail(email: string, token: string) {
   const verificationUrl = `${APP_URL}/verify-email?token=${token}`
@@ -9,7 +9,7 @@ export async function sendVerificationEmail(email: string, token: string) {
   const { data, error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: email,
-    subject: 'Verify your DeoKit account',
+    subject: 'Verify your NeoKit account',
     html: `
       <!DOCTYPE html>
       <html>
@@ -20,7 +20,7 @@ export async function sendVerificationEmail(email: string, token: string) {
         <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #0a0a0a; color: #fafafa; padding: 40px 20px; margin: 0;">
           <div style="max-width: 480px; margin: 0 auto; background-color: #171717; border-radius: 8px; padding: 32px; border: 1px solid #262626;">
             <h1 style="font-size: 24px; font-weight: 600; margin: 0 0 16px 0; color: #fafafa;">
-              Welcome to DeoKit
+              Welcome to NeoKit
             </h1>
             <p style="font-size: 16px; line-height: 1.5; color: #a1a1aa; margin: 0 0 24px 0;">
               Thanks for signing up! Please verify your email address by clicking the button below.
@@ -40,7 +40,7 @@ export async function sendVerificationEmail(email: string, token: string) {
         </body>
       </html>
     `,
-    text: `Welcome to DeoKit!\n\nThanks for signing up! Please verify your email address by clicking the link below:\n\n${verificationUrl}\n\nThis link will expire in 24 hours. If you didn't create an account, you can safely ignore this email.`,
+    text: `Welcome to NeoKit!\n\nThanks for signing up! Please verify your email address by clicking the link below:\n\n${verificationUrl}\n\nThis link will expire in 24 hours. If you didn't create an account, you can safely ignore this email.`,
   })
 
   if (error) {
@@ -57,7 +57,7 @@ export async function sendPasswordResetEmail(email: string, token: string) {
   const { data, error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: email,
-    subject: 'Reset your DeoKit password',
+    subject: 'Reset your NeoKit password',
     html: `
       <!DOCTYPE html>
       <html>
