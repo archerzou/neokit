@@ -22,47 +22,47 @@ loader.config({
 
 // Define custom themes
 function defineCustomThemes(monaco: Monaco) {
-  // Monokai theme
-  monaco.editor.defineTheme("monokai", {
-    base: "vs-dark",
+  // GitHub Light theme
+  monaco.editor.defineTheme("github-light", {
+    base: "vs",
     inherit: true,
     rules: [
-      { token: "comment", foreground: "88846f" },
-      { token: "keyword", foreground: "f92672" },
-      { token: "string", foreground: "e6db74" },
-      { token: "number", foreground: "ae81ff" },
-      { token: "type", foreground: "66d9ef" },
-      { token: "function", foreground: "a6e22e" },
-      { token: "variable", foreground: "f8f8f2" },
+      { token: "comment", foreground: "6a737d" },
+      { token: "keyword", foreground: "d73a49" },
+      { token: "string", foreground: "032f62" },
+      { token: "number", foreground: "005cc5" },
+      { token: "type", foreground: "e36209" },
+      { token: "function", foreground: "6f42c1" },
+      { token: "variable", foreground: "24292e" },
     ],
     colors: {
-      "editor.background": "#272822",
-      "editor.foreground": "#f8f8f2",
-      "editor.lineHighlightBackground": "#3e3d32",
-      "editorCursor.foreground": "#f8f8f0",
-      "editor.selectionBackground": "#49483e",
+      "editor.background": "#ffffff",
+      "editor.foreground": "#24292e",
+      "editor.lineHighlightBackground": "#f6f8fa",
+      "editorCursor.foreground": "#24292e",
+      "editor.selectionBackground": "#0366d625",
     },
   });
 
-  // GitHub Dark theme
-  monaco.editor.defineTheme("github-dark", {
-    base: "vs-dark",
+  // Solarized Light theme
+  monaco.editor.defineTheme("solarized-light", {
+    base: "vs",
     inherit: true,
     rules: [
-      { token: "comment", foreground: "8b949e" },
-      { token: "keyword", foreground: "ff7b72" },
-      { token: "string", foreground: "a5d6ff" },
-      { token: "number", foreground: "79c0ff" },
-      { token: "type", foreground: "ffa657" },
-      { token: "function", foreground: "d2a8ff" },
-      { token: "variable", foreground: "c9d1d9" },
+      { token: "comment", foreground: "93a1a1" },
+      { token: "keyword", foreground: "859900" },
+      { token: "string", foreground: "2aa198" },
+      { token: "number", foreground: "d33682" },
+      { token: "type", foreground: "b58900" },
+      { token: "function", foreground: "268bd2" },
+      { token: "variable", foreground: "657b83" },
     ],
     colors: {
-      "editor.background": "#0d1117",
-      "editor.foreground": "#c9d1d9",
-      "editor.lineHighlightBackground": "#161b22",
-      "editorCursor.foreground": "#c9d1d9",
-      "editor.selectionBackground": "#264f78",
+      "editor.background": "#fdf6e3",
+      "editor.foreground": "#657b83",
+      "editor.lineHighlightBackground": "#eee8d5",
+      "editorCursor.foreground": "#657b83",
+      "editor.selectionBackground": "#eee8d5",
     },
   });
 }
@@ -70,9 +70,9 @@ function defineCustomThemes(monaco: Monaco) {
 // Map theme names to Monaco theme names
 function getMonacoTheme(theme: EditorTheme): string {
   const themeMap: Record<EditorTheme, string> = {
-    "vs-dark": "vs-dark",
-    monokai: "monokai",
-    "github-dark": "github-dark",
+    "vs": "vs",
+    "github-light": "github-light",
+    "solarized-light": "solarized-light",
   };
   return themeMap[theme];
 }
@@ -198,7 +198,7 @@ export default function CodeEditor({
   ) : null;
 
   return (
-    <div className="rounded-lg border border-border overflow-hidden bg-[#1e1e1e]">
+    <div className="rounded-lg border border-border overflow-hidden bg-white">
       <EditorHeader
         label={displayLanguage}
         copied={copied}
@@ -253,7 +253,7 @@ export default function CodeEditor({
       {/* Explain View */}
       {activeView === "explain" && explanation && (
         <div
-          className="prose prose-invert prose-sm max-w-none p-4 overflow-y-auto editor-scrollbar"
+          className="prose prose-sm max-w-none p-4 overflow-y-auto editor-scrollbar"
           style={{ minHeight: `${minHeight}px`, maxHeight: `${maxHeight}px` }}
         >
           <ReactMarkdown remarkPlugins={[remarkGfm]}>

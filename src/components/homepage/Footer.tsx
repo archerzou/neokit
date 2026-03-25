@@ -21,16 +21,16 @@ const FOOTER_LINKS = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1e1e2e] pt-16 pb-8 bg-[#0a0a0f]">
+    <footer className="border-t border-gray-200 pt-16 pb-8 bg-gray-50">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="grid grid-cols-[2fr_1fr_1fr_1fr] gap-12 mb-12 max-md:grid-cols-2 max-md:gap-8 max-sm:grid-cols-1">
           {/* Brand */}
           <div className="max-md:col-span-2 max-sm:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-[#e4e4ef] mb-3">
+            <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-gray-900 mb-3">
               <FolderOpen className="size-6" />
               NeoKit
             </Link>
-            <p className="text-sm text-[#8888a4] max-w-[280px] leading-relaxed">
+            <p className="text-sm text-gray-500 max-w-[280px] leading-relaxed">
               Your developer knowledge hub. One place for snippets, prompts, commands, and more.
             </p>
           </div>
@@ -38,14 +38,14 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(FOOTER_LINKS).map(([title, links]) => (
             <div key={title} className="flex flex-col gap-2.5">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#e4e4ef] mb-1">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-gray-900 mb-1">
                 {title}
               </h4>
               {links.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-sm text-[#8888a4] hover:text-[#e4e4ef] transition-colors"
+                  className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
                 >
                   {link.label}
                 </a>
@@ -54,8 +54,8 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="border-t border-[#1e1e2e] pt-6 text-center">
-          <p className="text-sm text-[#55556a]">
+        <div className="border-t border-gray-200 pt-6 text-center">
+          <p className="text-sm text-gray-400">
             &copy; {new Date().getFullYear()} NeoKit. All rights reserved.
           </p>
         </div>
