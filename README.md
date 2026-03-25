@@ -9,6 +9,14 @@ A unified hub for developer knowledge & resources.
 
 ---
 
+## Screenshots
+
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
 Developers keep their essentials scattered across snippets, bookmarks, and random folders. NeoKit brings everything into **one fast, searchable, AI-enhanced hub**.
 
 ## Stack
