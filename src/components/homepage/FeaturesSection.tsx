@@ -48,8 +48,8 @@ const FEATURES = [
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-[120px] text-center bg-[#12121a]">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section id="features" className="py-[120px] text-center     bg-gray-50">
+          <div className="max-w-[1200px] mx-auto px-6">
         <ScrollFadeIn>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-extrabold leading-tight mb-4 tracking-tight max-sm:text-[1.6rem]">
             Everything You Need,
@@ -60,7 +60,7 @@ export default function FeaturesSection() {
           </h2>
         </ScrollFadeIn>
         <ScrollFadeIn>
-          <p className="text-base text-[#8888a4] max-w-[520px] mx-auto mb-16 leading-relaxed">
+          <p className="text-base text-gray-500 max-w-[520px] mx-auto mb-16 leading-relaxed">
             Stop context-switching between tools. NeoKit keeps all your developer resources
             organized and searchable.
           </p>
@@ -70,7 +70,7 @@ export default function FeaturesSection() {
           {FEATURES.map((f) => (
             <ScrollFadeIn key={f.title}>
               <div
-                className="bg-[#12121a] border border-[#1e1e2e] rounded-xl px-6 py-5 text-left transition-all duration-300 hover:-translate-y-1 group"
+                className="bg-white border border-gray-200 rounded-xl px-6 py-5 text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group"
                 style={{ "--feature-accent": f.accent } as React.CSSProperties}
               >
                 <div
@@ -82,8 +82,8 @@ export default function FeaturesSection() {
                 >
                   <f.icon className="size-6" />
                 </div>
-                <h3 className="text-lg font-bold mb-2 text-[#e4e4ef]">{f.title}</h3>
-                <p className="text-sm text-[#8888a4] leading-relaxed">{f.description}</p>
+                <h3 className="text-lg font-bold mb-2 text-gray-900">{f.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{f.description}</p>
               </div>
             </ScrollFadeIn>
           ))}

@@ -40,7 +40,7 @@ export default function EditorHeader({
   const hasTabs = tabs && tabs.length > 0;
 
   return (
-    <div className="flex items-center justify-between px-4 py-2 bg-[#2d2d2d] border-b border-border">
+    <div className="flex items-center justify-between px-4 py-2 bg-muted border-b border-border">
       {/* Left side: macOS dots or tabs */}
       <div className="flex items-center gap-2">
         {hasTabs ? (
@@ -52,7 +52,7 @@ export default function EditorHeader({
                 onClick={() => onTabChange?.(tab.id)}
                 className={`px-3 py-1 text-sm font-medium rounded transition-colors ${
                   activeTab === tab.id
-                    ? "bg-[#1e1e1e] text-foreground"
+                    ? "bg-background text-foreground"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >

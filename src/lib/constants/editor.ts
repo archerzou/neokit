@@ -10,12 +10,12 @@ export interface EditorPreferences {
   theme: EditorTheme;
 }
 
-export type EditorTheme = 'vs-dark' | 'monokai' | 'github-dark';
+export type EditorTheme = 'vs' | 'github-light' | 'solarized-light';
 
 export const EDITOR_THEMES: { value: EditorTheme; label: string }[] = [
-  { value: 'vs-dark', label: 'VS Dark' },
-  { value: 'monokai', label: 'Monokai' },
-  { value: 'github-dark', label: 'GitHub Dark' },
+  { value: 'vs', label: 'VS Light' },
+  { value: 'github-light', label: 'GitHub Light' },
+  { value: 'solarized-light', label: 'Solarized Light' },
 ];
 
 export const FONT_SIZES = [12, 13, 14, 15, 16, 18, 20];
@@ -61,7 +61,7 @@ export const DEFAULT_EDITOR_PREFERENCES: EditorPreferences = {
   tabSize: 2,
   wordWrap: true,
   minimap: false,
-  theme: 'vs-dark',
+  theme: 'vs',
 };
 
 /**

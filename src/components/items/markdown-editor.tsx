@@ -145,7 +145,7 @@ export default function MarkdownEditor({
   const displayContent = showingOptimized ? optimizedContent : value;
 
   return (
-    <div className="rounded-lg border border-border overflow-hidden bg-[#1e1e1e]">
+    <div className="rounded-lg border border-border overflow-hidden bg-white">
       <EditorHeader
         label="Markdown"
         copied={copied}
@@ -167,12 +167,12 @@ export default function MarkdownEditor({
           value={value}
           onChange={(e) => onChange?.(e.target.value)}
           placeholder={placeholder}
-          className="w-full bg-[#1e1e1e] text-foreground font-mono text-base p-4 resize-none focus:outline-none placeholder:text-muted-foreground/50 editor-scrollbar overflow-y-auto"
+          className="w-full bg-white text-foreground font-mono text-base p-4 resize-none focus:outline-none placeholder:text-muted-foreground/50 editor-scrollbar overflow-y-auto"
           style={{ minHeight: `${minHeight}px`, maxHeight: `${maxHeight}px` }}
         />
       ) : (
         <div
-          className="prose prose-invert max-w-none p-4 overflow-y-auto editor-scrollbar"
+          className="prose max-w-none p-4 overflow-y-auto editor-scrollbar"
           style={{
             minHeight: `${minHeight}px`,
             maxHeight: `${maxHeight}px`,

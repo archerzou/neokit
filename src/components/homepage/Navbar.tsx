@@ -19,28 +19,28 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-xl transition-all duration-300 ${
         scrolled
-          ? "bg-[#0a0a0f]/92 border-b border-white/10"
-          : "bg-[#0a0a0f]/60 border-b border-transparent"
+          ? "bg-white/92 border-b border-gray-200"
+          : "bg-white/60 border-b border-transparent"
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-[#e4e4ef]">
+        <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-gray-900">
           <FolderOpen className="size-7" />
           NeoKit
         </Link>
 
         <div className="hidden md:flex gap-8">
-          <a href="/#features" className="text-sm font-medium text-[#8888a4] hover:text-[#e4e4ef] transition-colors">
-            Features
+          <a href="/#features" className="text-sm font-medium           text-gray-500 hover:text-gray-900 transition-colors">
+                      Features
           </a>
-          <a href="/#pricing" className="text-sm font-medium text-[#8888a4] hover:text-[#e4e4ef] transition-colors">
-            Pricing
+          <a href="/#pricing" className="text-sm font-medium           text-gray-500 hover:text-gray-900 transition-colors">
+                      Pricing
           </a>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="outline" asChild className="border-[#1e1e2e] text-[#8888a4] hover:text-[#e4e4ef] hover:border-[#8888a4] bg-transparent">
-            <Link href="/sign-in">Sign In</Link>
+          <Button variant="outline" asChild className="          border-gray-200 text-gray-500 hover:text-gray-900 hover:border-gray-400 bg-transparent">
+                      <Link href="/sign-in">Sign In</Link>
           </Button>
           <Button asChild className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 text-white border-0 hover:opacity-90">
             <Link href="/register">Get Started</Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-[#e4e4ef] p-1"
+          className="md:hidden text-gray-900 p-1"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -57,22 +57,22 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden flex flex-col gap-2 px-6 pb-6 border-t border-[#1e1e2e]">
+        <div className="md:hidden flex flex-col gap-2 px-6 pb-6 border-t border-gray-200">
           <a
             href="/#features"
-            className="text-[#8888a4] text-sm py-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            Features
+            className="          text-gray-500 text-sm py-2"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      Features
           </a>
           <a
             href="/#pricing"
-            className="text-[#8888a4] text-sm py-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            Pricing
+            className="          text-gray-500 text-sm py-2"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      Pricing
           </a>
-          <Button variant="outline" asChild className="border-[#1e1e2e] text-[#8888a4] hover:text-[#e4e4ef] bg-transparent mt-1 justify-center">
+          <Button variant="outline" asChild className="border-gray-200 text-gray-500 hover:text-gray-900 bg-transparent mt-1 justify-center">
             <Link href="/sign-in" onClick={() => setMobileOpen(false)}>Sign In</Link>
           </Button>
           <Button asChild className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 text-white border-0 justify-center">
